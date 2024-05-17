@@ -113,6 +113,14 @@ main {
     color: #fff;
 }
 
+/* Reasons section */
+#reasons {
+    width: 90%;
+    margin: auto;
+}
+
+
+
 /* Footer */
 #social-networks {
     text-align: center;
