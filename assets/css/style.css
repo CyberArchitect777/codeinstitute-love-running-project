@@ -117,9 +117,14 @@ main {
 #reasons {
     width: 90%;
     margin: auto;
+    margin-top: 20px;
 }
 
-
+#reasons h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 280%;
+}
 
 /* Footer */
 #social-networks {
