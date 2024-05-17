@@ -166,7 +166,7 @@ main {
     color: #3a3a3a;
 }
 
-/* Media query: tablets and larger (768px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -212,7 +212,7 @@ main {
         flex-direction: column;
         width: 100%;
     }
-    
+
     #benefits-physical > div, #benefits-mental > div {
         width: 75%;
     }
@@ -223,7 +223,7 @@ main {
     }
 }
 
-/* Media query: tablets and larger (768px and up) */
+/* Media query: laptops and larger (768px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
