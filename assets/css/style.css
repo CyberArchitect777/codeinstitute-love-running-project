@@ -166,7 +166,7 @@ main {
     color: #3a3a3a;
 }
 
-/* Large devices (laptops and desktops, 992px and up) */
+/* Media query: tablets and larger (768px and up) */
 @media screen and (min-width: 768px) {
     /* Header */
     nav {
@@ -223,7 +223,7 @@ main {
     }
 }
 
-/* Media query: laptops and larger (768px and up) */
+/* Large devices (laptops and desktops, 992px and up) */
 @media screen and (min-width: 992px) {
     #menu a:hover {
         border-bottom: 1px solid #3a3a3a;
@@ -233,22 +233,26 @@ main {
 @media screen and (min-width: 1200px) {
     #benefits {
         display: flex;
-        justify-content: space-around;
+        flex-direction: row;
     }
 
-    #benefits-physical, #benefits-mental, #benefits-image {
-        flex: 1 1;
+    #benefits > div {
+        flex: 1;
     }
 
-    #benefits-physical {
-        align-items: flex-end;
-        background-color: red;
-        order: -1;
+    #benefits-image {
+        order: 0;
     }
 
     #benefits-mental {
-        align-items: flex-start;
-        background-color: blue;
         order: 1;
+    }
+
+    #benefits-mental > div {
+        align-self: flex-start;
+    }
+
+    #benefits-physical > div {
+        align-self: flex-end;
     }
 }
